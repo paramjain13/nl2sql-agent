@@ -60,10 +60,18 @@ python run_agent.py --split mini
 
 | System | Split | EX | LLM calls / q |
 |--------|-------|-----|---------------|
-| v0 baseline (single call) | mini | _ | 1.0 |
+| v0 baseline (single call) | mini | 64.4% | 1.0 |
 | + schema linking | mini | _ | _ |
 | + self-correction | mini | _ | _ |
 | **full agent** | dev | _ | _ |
+
+v0 baseline per-difficulty breakdown (mini, 500 examples, our CONTROL number):
+
+| Difficulty | n | EX |
+|------------|-----|-----|
+| simple | 148 | 75.0% |
+| moderate | 250 | 62.8% |
+| challenging | 102 | 52.9% |
 
 Reference: human ≈ 92.96% EX · current SOTA ≈ 81–82% EX (heavy test-time scaling).
 Your neighborhood as a lean single-agent: ~55–72% EX.
