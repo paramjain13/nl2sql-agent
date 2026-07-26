@@ -1,0 +1,20 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# BIRD datasets + fintech demo DB (large, don't commit)
+data/
+
+# Eval outputs
+predictions_*.json
+
+# OS
+.DS_Store
